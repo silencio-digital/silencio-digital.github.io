@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silencio Digital</title>
+  <style>
+    html {
+      box-sizing: border-box;
+      background-color: #09121b;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: row;
+    }
+
+    figure {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    figure {
+      margin: 0;
+      position: relative;
+    }
+
+    figure:before {
+      content: "";
+      display: block;
+      height: 0;
+    }
+
+    .img-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    img {
+      position: absolute;
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  </style>
+</head>
+<body style="margin:0;">
+  <div class="gallery">
+    <figure>
+      <div class="img-wrap">
+        <img src="assets/silencio-logo-white.svg" style="max-width:50%" />
+      </div>
+    </figure>
+  </div>
+</body>
+</html>
+
+
